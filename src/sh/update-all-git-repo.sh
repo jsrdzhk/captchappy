@@ -5,10 +5,10 @@
 # @author: Rodney Cheung
 # @date: 2021-05-11 09:09:51
  # @last_author: Rodney Cheung
- # @last_edit_time: 2021-05-12 09:04:04
+ # @last_edit_time: 2021-07-20 08:29:13
 ###
 CUR_DIR=$(pwd)
-for item in $(find . -name ".git" -d 2 | cut -c 3-); do
+for item in $(find . -name ".git" | cut -c 3-); do
     echo "${item}"
     cd "${item}" || exit
     cd ..
